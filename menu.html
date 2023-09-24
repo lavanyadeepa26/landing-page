@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:goldenrod;
+        }
+        .menu-container {
+            background-color:olive;
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+            grid-gap: 20px;
+        }
+        .menu-container h1 h2 {
+            color: whitesmoke;
+            text-align: center;
+            position: absolute;
+            cursor: pointer;
+            bottom: -5px;
+            height: 4px;
+            width: 100%;
+            left:0;
+            /* background-color: black; */
+            transition: 0.3s;
+            transition-timing-function: ease-in-out;
+            transform: scaleX(0);
+        }
+        h1 h2::after{
+            transform: scaleX(0);
+
+        }
+        .menu-item {
+            background-color:whitesmoke;
+            margin-top: 70px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border:3px solid black;
+        }
+        .menu-item h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .menu-item p {
+            font-size: 16px;
+            text-align: justify;
+        }
+        .order-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Add animation effect */
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .order-button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>MENU ITEMS</h1>
+        <div class="menu-item">
+            <img src="../image/mutton bri.jpg" alt="Biriyani">
+            <h2>Biriyani</h2>
+            <p>Hyderabadi mutton biryani is a classic dish made by layering rice over slow cooked mutton gravy.</p>
+            <p>Price: $20.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/fried chicken.jpg" alt="chicken fry">
+            <h2>Chicken Fry</h2>
+            <p>chicken pieces that have been coated with seasoned flour or batter deep fried, pressure fried, or air fried. </p>
+            <p>Price: $22.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/fish fry.jpg" alt="fish fry">
+            <h2>Fish Fry</h2>
+            <p>A fish fry is a meal containing battered or breaded fried fish.It usually also includes french fries, salad</p>
+            <p>Price: $15.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/stalek.jpg" alt="stalek">
+            <h2>Grilled chicken</h2>
+            <p>Grilled to perfection and served with a fresh salsa of grapes, spring onion and cherry tomatoes.</p>
+            <p>Price: $16.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <!-- Sandwicth -->
+        <h2>SPICY FOOD</h2>
+        <div class="menu-item">
+            <img src="../image/baguette sandwich.avif" alt="sandwitch">
+            <h2>Baguette </h2>
+            <p> The Veggie Baguette Sandwich. I use fresh cucumber, piled high on a crusty whole-grain baguette. </p>
+            <p>Price: $10.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/sandwitch.jpg" alt="sandwitch">
+            <h2>Mint-Sandwich</h2>
+            <p> slices of meat, cheese, or other food placed between two slices of bread be as old as meat and bread</p>
+            <p>Price: $13.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/sandwct1.avif" alt="sandwitch">
+            <h2>Egg-Sandwich</h2>
+            <p>An egg sandwich is a sandwich with some kind of cooked egg filling ,sliced boiled eggs and egg salad </p>
+            <p>Price: $8.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/sand.jpg" alt="sandwitch">
+            <h2>Club Sandwich</h2>
+            <p>a sandwich, typically on three slices of toast, interlaid with pieces of cold chicken  and bacon or ham </p>
+            <p>Price: $7.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <!-- pasta and noodles -->
+        <h1>Pastha & Noodles</h1>
+        <div class="menu-item">
+            <img src="../image/pastha 2.jpg" alt="Pastha">
+            <h2>Tomato Pasta</h2>
+            <p>Garlic, Italian seasoning and cream complete it. Add some freshly grated  cheese to take it over the top!</p>
+            <p>Price: $12.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/pastha.jpg" alt="Pastha">
+            <h2>Pasta</h2>
+            <p>Spicy pasta gralic flavor that is healthy diet with mint that also can include vegetables, fruits, fish, and poultry. </p>
+            <p>Price: $9.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/spicy noodles wllppr.jpg" alt="Noodles">
+            <h2>Noodles</h2>
+            <p> A cooked egg-and-flour paste prominent in European and Asian cuisine by its elongated ribbonlike form.</p>
+            <p>Price: $12.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/noodles.png" alt="Noodles">
+            <h2>Spicy Noodles</h2>
+            <p>Delicious boiled noodles with  garlic flavour  topped with fresh herbs and spicy tomato and chilly creamy.</p>
+            <p>Price: $10.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <!-- hamburger -->
+        <h1>Hamburger</h1>
+        <div class="menu-item">
+            <img src="../image/beefmushrooms burger.jpg" alt="burger">
+            <h2>Burger</h2>
+            <p>Delicious oven-baked burger garlic bread topped with fresh herbs patty  looks like a frisbee and be slightly burger buns.</p>
+            <p>Price: $15.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/burpot.jpg" alt="bur">
+            <h2>Spicy Burger</h2>
+            <p>A veggie burger is a hamburger made with a patty that contain meat coated chilly toasted and onion topped with potatoes.</p>
+            <p>Price: $20.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/burg.jpg" alt="Noodles">
+            <h2>Multi burger</h2>
+            <p>Crisp golden potato patties are sandwiched between burger buns, topped with veggies & roasted tomato</p>
+            <p>Price: $22.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/bur.jfif" alt="Noodles">
+            <h2>Chilly Burger</h2>
+            <p>A patty or burger  is a flattened, serving of ground meat and/or legumes,vegetables, or meat alternatives.</p>
+            <p>Price: $12.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <!-- desserts -->
+        <h1>Desserts</h1>
+        <div class="menu-item">
+            <img src="../image/cho.jpg" alt="Noodles">
+            <h2>Strawberry Cake</h2>
+            <p>Delicious oven-baked garlic bread topped with fresh herbs.</p>
+            <p>Price: $8.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/ice.jpg" alt="Noodles">
+            <h2>Chocolate-Cream</h2>
+            <p>Delicious oven-baked garlic bread topped with fresh herbs.</p>
+            <p>Price: $5.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/chobar.jpg" alt="Noodles">
+            <h2>Chocolate - Bar</h2>
+            <p>Delicious oven-baked garlic bread topped with fresh herbs.</p>
+            <p>Price: $7.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="../image/banacake.jpg" alt="Noodles">
+            <h2>Banana chococake</h2>
+            <p>Delicious oven-baked garlic bread topped with fresh herbs.</p>
+            <p>Price: $10.00</p>
+            <button class="order-button">Order Now</button>
+        </div>
+       
+    </div>
+</body>
+</html>
